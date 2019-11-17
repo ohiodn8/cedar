@@ -113,13 +113,9 @@ GEM
       activesupport (>= 4.0)
     daemons (1.3.1)
     diff-lcs (1.3)
-    docker-api (1.34.2)
-      excon (>= 0.47.0)
-      multi_json
     email_validator (1.6.0)
       activemodel
     erubi (1.8.0)
-    excon (0.65.0)
     execjs (2.7.0)
     ffi (1.11.1)
     file_explorer (0.1.1)
@@ -169,10 +165,9 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.11.3)
     msgpack (1.3.0)
-    multi_json (1.13.1)
     nenv (0.3.0)
     nio4r (2.4.0)
-    nokogiri (1.10.3)
+    nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
     notiffany (0.1.1)
       nenv (~> 0.1)
@@ -303,7 +298,6 @@ DEPENDENCIES
   ci_reporter_rspec
   clearance
   coffee-rails (~> 4.2)
-  docker-api
   file_explorer
   guard-rspec
   jbuilder (~> 2.5)
