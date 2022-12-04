@@ -22,9 +22,7 @@ class MessagesController < ApplicationController
 
     respond_to do |format|
       if @message.save
-        ActionCable.server.broadcast 'room_channel',
-                                   content:  @message.content,
-                                   username: @message.user.email
+        ActionCable.server.broadcast 'room_channel', { content:  @message.content, username: @message.user.email }
         format.html { redirect_back fallback_location: root_path, notice: 'Message was successfully created.' }
       else
         format.html { redirect_back fallback_location: root_path, notice: 'Message not created!' }
